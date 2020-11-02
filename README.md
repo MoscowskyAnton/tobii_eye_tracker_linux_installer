@@ -36,9 +36,9 @@ You will see how the tracker captures the position of the screen you are looking
 
 #### Test env:
 
-SO: Ubuntu 18.10 x86_64 Cinnamon 4.18.0-17-generic
+SO: Ubuntu 20.04 LTS
 
-Tracker: Tobii
+Tracker: Tobii 4C
 
 See:
 https://github.com/Eitol/tobii_is4_x11
