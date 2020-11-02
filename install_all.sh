@@ -1,12 +1,15 @@
 #!/usr/bin/env bash
 
+wget -P  /tmp http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/multiarch-support_2.27-3ubuntu1.2_amd64.deb
+sudo dpkg -i /tmp/multiarch-support_2.27-3ubuntu1.2_amd64.deb
+
 LIB_DIR=./lib
 
 
 sudo apt --fix-broken install libsqlcipher0 ./deps/libuv0.10_0.10.22-2_amd64.deb libpthread-stubs0-dev build-essential
 
-# Targeted Linux distribution is Ubuntu Linux 16.04 LTS
-# Tested on  Ubuntu 18.10 x86_64 with Cinnamon. Kernel  4.18.0-16-generic
+
+# Tested on  Ubuntu 20.04 LTS
 
 # Install Tobii USB Host (mandatory) that handles connections to the tracker:
 sudo dpkg -i tobiiusbservice_l64U14_2.1.5-28fd4a.deb
@@ -31,6 +34,6 @@ sudo cp ./tobii.conf /etc/ld.so.conf.d/
 sudo mkdir /usr/include/tobii
 sudo cp -R ${LIB_DIR}/include/tobii/* /usr/include/tobii
 
-echo "DONE :)"
+sudo apt install ./TobiiProEyeTrackerManager-2.1.0.deb
 
-sudo apt install ./Tobii.Pro.Eye.Tracker.Manager.Linux-1.12.1.deb
+echo "Done instalation"
