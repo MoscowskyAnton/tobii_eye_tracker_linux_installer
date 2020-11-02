@@ -6,7 +6,7 @@ sudo dpkg -i /tmp/multiarch-support_2.27-3ubuntu1.2_amd64.deb
 LIB_DIR=./lib
 
 
-sudo apt --fix-broken install libsqlcipher0 ./deps/libuv0.10_0.10.22-2_amd64.deb libpthread-stubs0-dev build-essential
+sudo apt --fix-broken install gconf2 gconf-service libappindicator1 libsqlcipher0 ./deps/libuv0.10_0.10.22-2_amd64.deb libpthread-stubs0-dev build-essential
 
 
 # Tested on  Ubuntu 20.04 LTS
