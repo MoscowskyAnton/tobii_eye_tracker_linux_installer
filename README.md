@@ -8,9 +8,9 @@ https://www.tobiipro.com/es/learn--support/downloads/
 (Changed to: https://www.tobiipro.com/product-listing/eye-tracker-manager/)
 
 #### Instalation
-
+```
 bash ./install_all.sh
-
+```
 #### Configuration
 
 Run the Tobii Pro Eye Tracker Manager:
@@ -21,13 +21,11 @@ Calibrate the device
 ![Configuration](media/config.gif)
 
 #### Run the example code
-
+```
 cd example
-
 gcc  main.cpp -o main -pthread /usr/lib/tobii/libtobii_stream_engine.so
-
 ./main
-
+```
 ![Example test](media/example_test.gif)
 
 
