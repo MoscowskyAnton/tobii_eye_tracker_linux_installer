@@ -1,4 +1,4 @@
-It allows to install the drivers and development libraries to operate devices compatible with IS4 (Tobii 4C).
+It allows to install the drivers and development libraries to operate devices compatible with IS4 (Tobii 4C, 5).
 
 The deps packages were obtained from the tobii page:
 https://developer.tobii.com/consumer-eye-trackers/stream-engine/getting-started
@@ -36,7 +36,7 @@ You will see how the tracker captures the position of the screen you are looking
 
 SO: Ubuntu 20.04 LTS
 
-Tracker: Tobii 4C
+Tracker: Tobii 4C, Tobii 5
 
 See:
 https://github.com/Eitol/tobii_is4_x11
